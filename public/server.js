@@ -38,6 +38,7 @@ app.post("/api/notes", function(req, res) {
           id: newNoteId,
           title: noteRequest.title,
           text: noteRequest.text
+          
       };
       notes.push(newNote);
       res.json(newNote);
