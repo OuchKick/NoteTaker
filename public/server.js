@@ -5,7 +5,7 @@ const fs = require('fs');
 
 const app = express();
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -42,6 +42,7 @@ app.post("/api/notes", function(req, res) {
       };
       notes.push(newNote);
       res.json(newNote);
+      console.log(newNote);
       fs.writeFile(path.join(__dirname, "/db.json"), JSON.stringify(notes, null, 2), function(err) {
           if (err) throw err;
       });
