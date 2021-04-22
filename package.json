@@ -1,0 +1,17 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "description": "Note Taker application",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "author": "Adam R",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "uuid": "^8.3.2"
+  }
+}
